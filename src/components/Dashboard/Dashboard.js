@@ -53,7 +53,8 @@ const Dashboard = () => {
       <div className="charts-container p-8 bg-white rounded-xl shadow-xl mb-8">
         <div className="grouped-charts grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div className="chart-item p-6 bg-gray-100 rounded-lg shadow-md">
-            <LineChartComponent data={lineData} title="Sales Analytics" />
+          <UpcomingTasks />
+
           </div>
           <div className="chart-item p-6 bg-gray-100 rounded-lg shadow-md">
             <PieChartComponent data={pieData} onClick={handlePieChartClick} title="User Distribution" />
@@ -61,7 +62,8 @@ const Dashboard = () => {
         </div>
 
         <div className="chart-item p-6 bg-gray-100 rounded-lg shadow-md">
-          <BarChartComponent data={barData} title="Monthly Orders" />
+        <LineChartComponent data={lineData} title="Sales Analytics" />
+
         </div>
       </div>
 
@@ -70,8 +72,9 @@ const Dashboard = () => {
       </div>
 
       <div className="tasks-projects-container grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <UpcomingTasks />
         <OngoingProjects />
+        <BarChartComponent data={barData} title="Monthly Orders" />
+
       </div>
 
       <div className="tenders-table-container p-8 bg-white rounded-xl shadow-xl">
