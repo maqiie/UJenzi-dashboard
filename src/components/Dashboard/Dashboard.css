@@ -1,0 +1,88 @@
+.dashboard-container {
+    background-color: #f0f4f8; /* Lighter background for a cleaner look */
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  /* Dashboard Title */
+  h2 {
+    color: #2d3748; /* Darker text for better readability */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center; /* Center align title */
+  }
+  
+  /* Statistics Section */
+  .statistics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; /* Center align statistics cards */
+    margin-bottom: 2rem;
+  }
+  
+  /* Grouped Charts */
+  .charts-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  /* Grouped Charts: Sales Analytics and User Distribution */
+  .grouped-charts {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  /* Individual chart items */
+  .chart-item {
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect on chart */
+  .chart-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Tasks & Projects Section */
+  .tasks-projects-container {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Tenders Table Section */
+  .tenders-table-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive breakpoints */
+  @media (min-width: 768px) {
+    .grouped-charts {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .tasks-projects-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile view adjustments */
+    .grouped-charts,
+    .tasks-projects-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
